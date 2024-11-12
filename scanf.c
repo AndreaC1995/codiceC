@@ -16,8 +16,16 @@ int main ()
     printf("\n%d + %d = %d\n", primo, secondo, risultato);
     printf("\n%d - %d = %d\n", primo, secondo, primo - secondo);
     printf("\n%d * %d = %d\n", primo, secondo, primo * secondo);
-    printf("\n%d / %d = %d\n", primo, secondo, primo / secondo);
-    printf("\n%d modulo %d = %d\n", primo, secondo, primo % secondo);
 
+    if (secondo != 0)
+    {
+        printf("\n%d / %d\n", primo, secondo, primo/ secondo);
+        printf("\n%d / %d ha resto %d\n", primo, secondo, primo % secondo);
+    }
+    else
+    {
+        printf ("\nHai appena trovato una gemma dell'infinito");
+    }
+   
     return 0;
 }
